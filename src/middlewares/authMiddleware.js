@@ -52,6 +52,13 @@ const isLogOut = (req,res,next)=>{
     }
 };
 
+const isAdmin = (req,res,next)=>{
+    try {
+        let admin = req.user.isAdmin
+    } catch (error) {
+        
+    }
+};
 
 
 module.exports = {isLogIn,isLogOut}
